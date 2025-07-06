@@ -5,6 +5,7 @@ const { getStoredPosts, storePosts } = require('./data/posts');
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
